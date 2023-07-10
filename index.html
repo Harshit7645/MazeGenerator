@@ -52,23 +52,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a
-              class="nav-item nav-link active"
-              href="./index.html"
-              >DFS <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link" href="./util/prims.html"
-              >Prims</a
-            >
-            <a class="nav-item nav-link" href="./util/kruskals.html"
-              >Kruskals</a
-            >
-            <a class="nav-item nav-link" href="./util/bst.html"
-              >Binary Tree</a
-            >
-            <a class="nav-item nav-link" href="./util/rec.html"
-              >Recursive</a
-            >
+            <a class="nav-item nav-link active"
+              href="./index.html">DFS <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="./util/prims.html">Prims</a>
+            <a class="nav-item nav-link" href="./util/kruskals.html">Kruskals</a>
           </div>
         </div>
       </nav>
@@ -77,12 +64,12 @@
         <script src="./util/index.js" defer></script>
         <div class="left"></div>
         <div class="right">
-          <h2>Depth First Search</h2>
+          <h2>Depth First Search and recursive Backtracker</h2>
           <p id="para">
             <ul>
               <li>Choose a starting point in the field.</li>
             <li>Randomly choose a wall at that point and carve a passage through to the adjacent cell, but only if the adjacent cell has not been visited yet. This becomes the new current cell.</li>
-            <li>If all adjacent cells have been visited, back up to the last cell that has uncarved walls and repeat.</li>
+            <li>If all adjacent cells have been visited, we will backtrack recursively to the last cell which has uncarved walls.</li>
             <li>The algorithm ends when the process has backed all the way up to the starting point.</li>
             </ul>
           </p>
